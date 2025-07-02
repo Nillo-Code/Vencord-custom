@@ -42,7 +42,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "chore: prune unwanted upstream workflows"
 
       - name: Push cleaned main back to your fork
-        uses: ad-m/github-push-action@v0.11.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
