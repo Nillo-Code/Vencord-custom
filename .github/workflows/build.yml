@@ -12,7 +12,8 @@ on:
             - pnpm-lock.yaml
 env:
     FORCE_COLOR: true
-
+    VENCORD_REMOTE: Nillo-Code/Vencord-custom
+    
 jobs:
     Build:
         runs-on: ubuntu-latest
