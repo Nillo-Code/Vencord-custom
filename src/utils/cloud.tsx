@@ -58,7 +58,7 @@ const getUserId = () => {
     if (!id) throw new Error("User not yet logged in");
     return id;
 };
-// Testing changes
+
 export async function getAuthorization() {
     const secrets = await DataStore.get<Record<string, string>>("Vencord_cloudSecret") ?? {};
 
